@@ -11,9 +11,13 @@ import java.util.function.Supplier;
 public class TimingsSuggestions {
 
     public static final String CURRENT_MINECRAFT_VERSION = "1.16.5";
+    public static final Map<String, VersionServerSuggestion> SERVER_VERSION_SUGGESTIONS; 
     public static final Map<String, PluginServerSuggestion> SERVER_PLUGIN_SUGGESTIONS;
     public static final Map<String, ConfigServerSuggestion> SERVER_CONFIG_SUGGESTIONS;
-
+        Map<String, VersionServerSuggestion> VersionSuggestions = new HashMap<>();
+        VersionSuggestions.put("!1.16.5", new VersionServerSuggestion("", "Consider updating Your server to the latest minecraft version, for all new features and performance improvements."));
+            return suggestions;
+                        
     static {
         Map<String, PluginServerSuggestion> pluginSuggestions = new HashMap<>();
         pluginSuggestions.put("spigot", new PluginServerSuggestion(
